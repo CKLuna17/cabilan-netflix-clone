@@ -6,8 +6,30 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  box-sizing: border-box;
 }
 
 .app {
   background-color: #111;
+}
+
+/* Laptop adjustments */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .app {
+    font-size: 1rem; /* slightly smaller than desktop default */
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .app {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .app {
+    font-size: 0.9rem;
+  }
 }

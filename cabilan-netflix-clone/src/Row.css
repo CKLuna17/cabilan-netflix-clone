@@ -3,7 +3,7 @@
     margin-left: 20px;
 }
 
-.row__posters{
+.row__posters {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -33,4 +33,32 @@
 
 .row__posterLarge:hover {
     transform: scale(1.07);
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+    .row {
+        margin-left: 15px;
+    }
+    .row__poster {
+        max-height: 90px;
+        margin-right: 8px;
+    }
+    .row__posterLarge {
+        max-height: 200px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .row {
+        margin-left: 10px;
+    }
+    .row__poster {
+        max-height: 70px;
+        margin-right: 6px;
+    }
+    .row__posterLarge {
+        max-height: 150px;
+    }
 }

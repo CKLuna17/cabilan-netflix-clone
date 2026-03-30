@@ -22,6 +22,7 @@ function Nav() {
             className="nav__logo"
             src="https://res.cloudinary.com/dn3hheo7z/image/upload/f_auto,q_auto/image-removebg-preview_ptfk6e.png"
             alt="Netflix Logo"
+            onClick={() => window.location.reload()}
       />
     <div/>
 

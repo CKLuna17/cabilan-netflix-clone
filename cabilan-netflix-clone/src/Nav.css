@@ -3,16 +3,14 @@
     top: 0;
     width: 100%;
     padding: 20px;
-    height: 30px;
+    height: 70px;
     z-index: 1;
-
-    /* Animations */
-    transition-timing-function: ease-in;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in;
 }
 
 .nav__black {
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.9);
+    
 }
 
 .nav__logo {
@@ -31,3 +29,53 @@
     object-fit: contain;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .nav {
+        height: 65px;
+        padding: 15px 20px;
+    }
+    .nav__logo {
+        top: -5px;
+        width: 150px;
+        height: auto;
+    }
+    .nav__avatar {
+        top: 7px;
+        width: 45px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav__logo {
+        position: fixed;
+        top: 2px;
+        height: 60px;
+        width: 120px;
+    }
+    .nav__avatar {
+        position: fixed;
+        top: 8px;
+        height: 50px;
+        width: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 10px;
+        height: 50px;
+    }
+    .nav__logo {
+        position: fixed;
+        top: 1px;
+        height: 50px;
+        width: 100px;
+    }
+    .nav__avatar {
+        position: fixed;
+        top: 7px;
+        height: 35px;
+        width: 30px;
+    }
+}
