@@ -5,12 +5,11 @@
     padding: 20px;
     height: 70px;
     z-index: 1;
-    transition: all 0.3s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .nav__black {
     background-color: rgba(0, 0, 0, 0.9);
-    
 }
 
 .nav__logo {
